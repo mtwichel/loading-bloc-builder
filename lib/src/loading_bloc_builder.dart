@@ -67,7 +67,9 @@ class LoadingBlocBuilder<B extends BlocBase<S>, S> extends StatelessWidget {
             if (builder != null) {
               return builder(context, state);
             }
-            return const CircularProgressIndicator();
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           case LoadingStatus.success:
             return successBuilder(context, state);
           case LoadingStatus.failure:
@@ -75,7 +77,9 @@ class LoadingBlocBuilder<B extends BlocBase<S>, S> extends StatelessWidget {
             if (builder != null) {
               return builder(context, state);
             }
-            return const Icon(Icons.error);
+            return const Center(
+              child: Icon(Icons.error),
+            );
         }
       },
     );
