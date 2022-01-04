@@ -1,6 +1,6 @@
 name: loading_bloc_builder
 description: A special BlocBuilder for displaying the lifecycle of a state with a LoadingStatus.
-version: 0.0.1-dev.2
+version: 0.0.1-dev.3
 repository: https://github.com/mtwichel/loading-bloc-builder
 
 environment:
@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^7.1.0
+  flutter_bloc: ^8.0.1
 
 dev_dependencies:
-  bloc_test: ^8.1.0
+  bloc_test: ^9.0.2
   equatable: ^2.0.3
   flutter_test:
     sdk: flutter
