@@ -1,3 +1,7 @@
+## 0.0.1
+
+Stable release! Loosened bloc constraints and updated Very Good Analysis.
+
 ## 0.0.1-dev.3
 
 Upgraded to bloc 8

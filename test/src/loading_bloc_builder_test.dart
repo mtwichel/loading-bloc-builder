@@ -43,7 +43,7 @@ void main() {
             create: (context) => TestingBloc(LoadingStatus.initial),
             child: LoadingBlocBuilder<TestingBloc, TestingState>(
               statusGetter: (state) => state.status,
-              initialBuilder: (_, _state) => const Text('Testing'),
+              initialBuilder: (_, state) => const Text('Testing'),
               successBuilder: (_, state) => const Text('Filler'),
             ),
           ),
@@ -74,7 +74,7 @@ void main() {
             create: (context) => TestingBloc(LoadingStatus.loading),
             child: LoadingBlocBuilder<TestingBloc, TestingState>(
               statusGetter: (state) => state.status,
-              loadingBuilder: (_, _state) => const Text('Testing'),
+              loadingBuilder: (_, state) => const Text('Testing'),
               successBuilder: (_, state) => const Text('Filler'),
             ),
           ),
@@ -105,7 +105,7 @@ void main() {
             create: (context) => TestingBloc(LoadingStatus.success),
             child: LoadingBlocBuilder<TestingBloc, TestingState>(
               statusGetter: (state) => state.status,
-              successBuilder: (_, _state) => const Text('Testing'),
+              successBuilder: (_, state) => const Text('Testing'),
             ),
           ),
         );
@@ -120,7 +120,7 @@ void main() {
             create: (context) => TestingBloc(LoadingStatus.failure),
             child: LoadingBlocBuilder<TestingBloc, TestingState>(
               statusGetter: (state) => state.status,
-              failureBuilder: (_, _state) => const Text('Testing'),
+              failureBuilder: (_, state) => const Text('Testing'),
               successBuilder: (_, state) => const Text('Filler'),
             ),
           ),
